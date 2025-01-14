@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: capstone-app
-        image: pyaephyo28/capstone-app:latest
+        image: ${DOCKER_IMAGE}:${DOCKER_TAG}
         imagePullPolicy: Always
         ports:
         - containerPort: 8080
