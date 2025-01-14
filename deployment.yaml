@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: capstone-app
-        image: IMAGE_PLACEHOLDER:TAG_PLACEHOLDER
+        image: ${DOCKER_IMAGE}:${DOCKER_TAG}
         imagePullPolicy: Always
         ports:
         - containerPort: 8880
