@@ -1,20 +1,20 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-"  name: capstone-app"
+  name: capstone-app
+  namespace: default
 spec:
-"  replicas: 3"
-"  selector:"
-"    matchLabels:"
-"      app: capstone-app"
-"  template:"
-"    metadata:"
-"      labels:"
-"        app: capstone-app"
-"    spec:"
-"      containers:"
-"      - name: capstone-app"
-"        image: pyaephyo28/capstone-app:latest
-"        imagePullPolicy: Always"
-"        ports:"
-"        - containerPort: 8080"
+  replicas: 3
+  selector:
+    matchLabels:
+      app: capstone-app
+  template:
+    metadata:
+      labels:
+        app: capstone-app
+    spec:
+      containers:
+        - name: capstone-app
+          image: pyaephyo28/capstone-app:latest
+          ports:
+            - containerPort: 8080
