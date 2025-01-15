@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: capstone-app
-        image: IMAGE_PLACEHOLDER:TAG_PLACEHOLDER  # Placeholders for image and tag
+        image: pyaephyo28/capstone-app:latest  # Placeholders for image and tag
         imagePullPolicy: Always
         ports:
         - containerPort: 8080  # Correct port for the application
