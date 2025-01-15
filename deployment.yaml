@@ -17,4 +17,4 @@ spec:
         image: pyaephyo28/capstone-app:latest
         imagePullPolicy: Always
         ports:
-        - containerPort: 8880
+        - containerPort: 8080
